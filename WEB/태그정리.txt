@@ -1,0 +1,46 @@
+## html <태그>
+
+<태그> ~~~ </태그>, <태그/> 
+<Element Attribute1 = "Value1" Attribute2 = "Value2" Attribute3 = "Value3">
+
+
+##. 기본태그 
+
+- 글자태그
+	[제목 글자]
+	- h(heading) -> h1~h6
+  
+	[본문 영역]
+	- p(paragraph) br(break), hr(horizontal rule)  
+
+	[하이퍼링크]
+	- a(anchor) , href(hyper refrence)	
+
+	[글자 모양]
+	- b(bold), i(italic), small, sub(subscript), sup(superscript), ins(insert), del(delete) ... 
+
+- 목록(list) 태그 : ol(ordered list) , ul(unordered list) ,li(list)
+	[순서있음]
+		<ol>
+		     <li(list)>~/<li>
+		</ol>
+	[순서없음]
+		<ul>
+		     <li(list)>~/<li>
+		</ul>
+
+- 테이블 태그 : <table [선두께] border = "1"> <thead>, <tbody>, <th(table heading)>, <tr(table row)>, <td(table data)>
+	<table>
+		<thead>
+			<tr> <th> </th> ... </tr>
+	
+		</thead>
+		<tbody>
+			<tr> <td> </td> ... </tr>
+			<tr> <td> </td> ... </tr>
+
+		</tbody>
+
+	</table>
+	
+- 미디어 태그 
