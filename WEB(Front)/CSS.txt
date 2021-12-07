@@ -1,0 +1,31 @@
+#.  CSS
+
+1. 기본구조(Syntax)
+
+<위치> {
+	Property : value
+	
+	color : red;
+	text-align : center;
+}
+
+2. 어디에(Selector)
+
+	* 	: 전체 태그 (all)
+	p	: p 태그만
+	#아이디	: 해당 id가 있는 태그만 적용
+	.클래스 	: 해당 클래스가 있는 태그만
+
+	,	: 복수개로 나란히 적용
+
+	[태그 상하위 구조] -> 자손 [ > ]후손  [ ]
+	body h1 p :  (body 밑에 h1 밑에 p는 모두 상관없이 받아라?)
+	
+	body  > h1 > p : 자손 [>]
+	body     h1    p : 후손 [  ]
+	
+3. 어떻게(Property : value)
+	- 색깔, 크기, 타입 ... 
+
+	- Box, Background, Border, Font, Position
+	
