@@ -1,0 +1,20 @@
+<script>
+    function sum(i,j){return i+j;}
+
+    var sub = function(i,j){return i-j;}
+
+    alert(sum(20,10));
+    alert(sub(20,10));
+    alert(sum('ko','rea'));
+
+    var a = 200;
+    var b = 100;
+    alert(sum(a,b));
+    alert(sum(string(a),string(b))); // 형변환
+
+    var c = '200';
+    var d = '100';
+    alert(sum(c,d));
+    alert(sum(Number(c),Number(d))); // 형변환
+                              
+</script>

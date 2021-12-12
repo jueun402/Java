@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title> 미니 계산기</title>
+    <script>
+        function calc(x) {
+            num1 = Number(document.fm.n1.value);
+            num2 = Number(document.fm.n2.value);
+            num3 = 0;
+
+            if (x == 'sum') {
+                num3 = num1 + num2;
+                document.fm.res.value = num3;
+            } else if (x == 'sub') {
+                num3 = num1 - num2;
+                document.fm.res.value = num3;
+            } else if (x == 'mul') {
+                num3 = num1 * num2;
+                document.fm.res.value = num3;
+            } else if (x == 'div') {
+                num3 = num1 / num2;
+                document.fm.res.value = num3;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <table border="1">
+            <form name='fm'>
+                <tr>
+                    <td> 숫자 1 </td>
+                    <td colspan="4"> <input type='text' name='n1'></td>
+                </tr>
+                <tr>
+                    <td> 숫자 2</td>
+                    <td colspan="4"> <input type='text' name='n2'> </td>
+                </tr>
+                <tr>
+                    <td> 연산 => </td>
+                    <td> <input type="button" value="덧셈" onclick="calc('sum')"></td>
+                    <td> <input type="button" value="뺄셈" onclick="calc('sub')"></td>
+                    <td> <input type="button" value="곱셈" onclick="calc('mul')"></td>
+                    <td> <input type="button" value="나눗셈" onclick="calc('div')"></td>
+                </tr>
+                <tr>
+                    <td> 결과 : </td>
+                    <td colspan="4"> <input type='text' name='res'> </td>
+                </tr>
+            </form>
+        </table>
+    </center>
+</body>
+
+</html>

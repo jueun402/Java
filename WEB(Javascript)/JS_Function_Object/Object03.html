@@ -1,0 +1,56 @@
+<script>
+    // {} , {k : v} // dict
+    var dict = {    '사과' : 'apple',
+                    '바나나' : 'banana',
+                    '포도' : 'graph',
+                    '강': 'river',
+                    '물':'water'};
+
+
+    alert(typeof(dict));
+
+    
+    dict.toString = function()
+    {
+        var output = '';
+
+        for(var k in this){ // this에 toString function도 포함 
+            if (k != 'toString'){
+            output += k + ' : ' + this[k] + '\n';// 문자열로 +됨 
+            }
+        }
+        
+        return output;
+    }
+
+
+    // // toString을 빼라 
+    // function toString(dict){
+    //     var output = '';
+
+    //     for(var k in dict){ // this에 toString function도 포함 
+    //         output += dict[k] // 문자열로 +됨 
+    //     }
+    //     return output;
+    // } 
+    
+    alert(dict.toString());
+
+
+    // dict.toString = function(){
+    //     var output = '';
+
+    //     for(var k in this){
+    //         output += this[k]
+    //     }
+        
+    //     return output;
+    // }
+        
+    // alert(typeof(dict));
+    // alert(dict.toString()); // apple 
+
+    // delete(dict.강);
+    // dict.책 = 'book';
+
+</script>

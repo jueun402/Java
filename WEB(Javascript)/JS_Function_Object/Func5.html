@@ -1,0 +1,18 @@
+<script>
+    function func1(i,j){
+        // inner 함수 => 밖에 같은걸 정의해도 영향 x 
+        function pow(k){return (k*k);}
+        function sum(a,b) {return (a+b);}
+
+        return sum(pow(i),pow(j));
+        
+    }
+
+    function pow(k){ return (k+1000); }
+
+    alert(func1(3,4)); //25
+    alert(func1(1,7));// 50
+    alert(func1(4,8)); // 80 
+    alert(pow(10)); // 1010
+
+</script>

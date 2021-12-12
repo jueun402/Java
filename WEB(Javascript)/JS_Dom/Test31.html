@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            // BOM
+            var child = window.open(" ",'width = 300 height = 200',true);
+
+            // DOM 
+            document.write("<h1> 안녕</h1>"); // document = html => body tag 생각
+            window.document.write("<h3> 감기 조심하세요</h3>"); // BOM 밑에 DOM이 있다 생각 
+
+            child.document.write('<h2> 오늘 날씨가 추워요 </h2>');
+            child.moveTo(0,0);
+
+            setInterval(function(){
+                child.moveTo(10,10);
+            },100);
+
+        </script>
+        
+        
+
+    </body>
+</html>

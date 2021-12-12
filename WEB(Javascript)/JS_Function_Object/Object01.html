@@ -1,0 +1,25 @@
+<script>
+
+    // array 생성 
+    var a = ['사과','바나나','귤','포도']; // array (x), 참조형
+    alert(a);
+    alert(typeof(a)); // Object - ArrayList
+    alert(a[1]);
+
+    // 객체(Object) 생성
+    var book = {title:'java', // 멤버 속성 
+                author : 'Tom',
+                price : 20000,
+                bPrint : function(){ // 멤버 메소드 
+                     alert(this.title+','+this.author+','+this.price);
+                }
+    }
+
+    alert(book);
+    alert(typeof(book)); // Object - ArrayList
+    alert(book.title);
+    alert(book['author']);
+    book.bPrint();
+    book['bPrint']();
+
+</script>

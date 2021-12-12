@@ -1,0 +1,31 @@
+<script>
+
+    function CallBack01(z){ // 매개변수로 전달되는 함수
+        for(var i = 0; i < 3; i++){
+            z();
+        }
+    } 
+
+    
+    // 탑재시킬 함수들
+    var a = function(){alert("aaaa");}
+    var b = function(){alert("bbbb");}
+    var c = function(){alert("cccc");}
+    
+    // 실행
+    CallBack01(a);
+    CallBack01(b);
+    CallBack01(c);
+    
+    function CallBack02(z,n){ // 매개변수로 전달되는 함수
+        for(var i = 0; i < n; i++){
+            z();
+        }
+    } 
+    
+    // 실행
+    CallBack02(a,2);
+    CallBack02(b,5);
+    CallBack02(c,7);
+    
+</script>

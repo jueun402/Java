@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            i = 100;
+            function naming(){
+                var i = 200; // 함수 내 지역변수 
+                j = '아치';
+                document.write(i+j+"<br>");
+            }
+        </script>
+    </head>
+
+    <body>
+        <script> 
+          naming(); 
+          document.write(i+j); // 전역변수 i를 불러옴 
+        </script>
+    </body>
+
+</html>

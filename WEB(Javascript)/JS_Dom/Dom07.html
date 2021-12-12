@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            function nLarge(){
+                v1 = fm.n1.value; // 20 
+                v2 = fm.n2.value; // 10
+                vLarge = (v1 > v2) ? v1: v2;
+                fm.res.value = vLarge;
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <table width = "350" border="1">
+            <tr><td align = "center">수 비교</td></tr> 
+            <tr>
+                <td align="center">
+                    <form name = 'fm'> <!--객체화 된 애들은 form태그 안에 있어야 실행 가능-->
+                        <input type = 'text' size = '10' name = 'n1'>
+                        <input type = 'text' size = '10'name = 'n2'>
+                        <input type = 'button' value = '실 행'onclick = "nLarge()">
+                    
+                </td>
+            </tr>
+            <tr><td> &nbsp; &nbsp; 입력값 중 큰 수는 ? <input type = "text" size = "20" name = "res"> </td> </form> </tr>
+        </table>
+    </body>
+
+</html

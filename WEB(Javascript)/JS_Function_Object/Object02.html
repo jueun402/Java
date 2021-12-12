@@ -1,0 +1,20 @@
+<script>
+
+    var book = { } // 이 자체로 클래스 생성 O
+    
+    book.title = "HTML"; // book object의 속성 추가 
+    book['author'] = "ALO";
+    book.getTitle = function(){return this.title;} // book object의 메소드 추가 
+    book['getAuthor'] = function(){return this.author;}
+    book.pBook = function(){alert(this.title +','+this.author);}
+
+    alert(typeof(book)); // object
+    alert(book.title);
+    alert(book['author']);
+    
+    alert(book.getTitle());
+    alert(book.getAuthor());
+    
+    book.pBook();
+
+</script>

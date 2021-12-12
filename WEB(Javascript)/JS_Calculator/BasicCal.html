@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title> 표준 계산기</title>
+    <script>
+        function addInput(v) {
+            var resC = document.getElementById("resCalc");
+            if (resC.value == '0') {
+                resC.value = v
+            } else {
+                resC.value += v
+            };
+        }
+
+        function backward() {
+            var resC = document.getElementById("resCalc");
+            var len = resC.value.length;
+            if (len == 0) {
+                return;
+            } else {
+                resC.value = resC.value.substr(0, len - 1);
+            }
+        }
+
+        function calc() {
+            var resC = document.getElementById("resCalc");
+            resC.value = eval(resC.value);
+        }
+
+        function clearAll() {
+            var resC = document.getElementById("resCalc");
+            resC.value = "0";
+        }
+
+        function clearEntry() {
+            var resC = document.getElementById("resCalc");
+            resC.value = resC.value.substr(0, resC.value.lastIndexOf(' '));
+        }
+    </script>
+    <style>
+        table {
+            text-align: center;
+            border: 1px solid;
+            width: 400px
+        }
+        
+        tr {
+            text-align: center;
+        }
+        
+        td {
+            width: 100px
+        }
+        
+        input[type=button] {
+            width: 60px;
+            background: orange;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h2> 표준 계산기 </h2>
+        <table>
+            <tr>
+                <td colspan="4"> <input type="text" id='resCalc' value=0> </td>
+            </tr>
+
+            <tr>
+                <td> <input type="button" value='뒤로' onclick="backward()"> </td>
+                <td> <input type="button" value='CE' onclick="clearEntry()"> </td>
+                <td> <input type="button" value='C' onclick="clearAll()"> </td>
+                <td> <input type="button" value='=' onclick="calc()"> </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value='7' onclick="addInput(this.value)"> </td>
+                <td> <input type="button" value='8' onclick="addInput(this.value)"> </td>
+                <td> <input type="button" value='9' onclick="addInput(this.value)"></td>
+                <td> <input type="button" value='/' onclick="addInput(' '+ this.value + ' ')"></td>
+            </tr>
+            <tr>
+                <td> <input type="button" value='4' onclick="addInput(this.value)"> </td>
+                <td> <input type="button" value='5' onclick="addInput(this.value)"> </td>
+                <td> <input type="button" value='6' onclick="addInput(this.value)"> </td>
+                <td> <input type="button" value='*' onclick="addInput(' '+ this.value + ' ')"> </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value='1' onclick="addInput(this.value)"> </td>
+                <td> <input type="button" value='2' onclick="addInput(this.value)"> </td>
+                <td> <input type="button" value='3' onclick="addInput(this.value)"> </td>
+                <td> <input type="button" value='-' onclick="addInput(' '+ this.value + ' ')"> </td>
+            </tr>
+            <tr>
+                <td> <input type="button" value='0' onclick="addInput(this.value)"> </td>
+                <td> <input type="button" value='000' onclick="addInput(this.value)"> </td>
+                <td> <input type="button" value=' '> </td>
+                <td> <input type="button" value='+' onclick="addInput(' '+ this.value + ' ')"> </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>

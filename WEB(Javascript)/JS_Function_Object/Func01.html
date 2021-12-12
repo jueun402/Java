@@ -1,0 +1,18 @@
+<script>
+
+    // 익명 함수 -> 변수로 지정된다는 약점 있음 => 변수에 대한 값이 재할당 될 수 있음 
+    var a = function() {
+        alert('a 함수는');
+        alert('익명함수입니다.')
+    }
+    a();
+    alert(a + '-> ' + typeof(a));
+
+    // 선언적 함수 
+    function b() {
+        alert('b 함수는');
+        alert('선언적 함수입니다.')
+    }
+    b();
+    alert(b + '-> ' + typeof(b));
+</script>
