@@ -1,0 +1,15 @@
+#. JSP 기본 태그 
+
+<%	%> 	-> 스크립트릿(Scriptlet) 	: Java 코드 영역, 내장 객체 사용 
+<%!	 %> 	-> 선언(declaration) 	: 변수, 메서드 선언 
+<%	=%> 	-> 표현식 (expression) 	: 출력, out.println()동일 
+<%--	--%>	-> 주석(Comment)		: 설명 작성 
+
+
+<%@	%>	-> 지시자(Directive)	: JSP 페이지 속성 지정
+
+	<@% page 	: 해당 page 환경 설정 
+
+	<@% include 	: 현재 Page 다른 Page 포함 
+
+	<%@ taglib 	: 태그 라이브러리에서 태그를 사용할 때   

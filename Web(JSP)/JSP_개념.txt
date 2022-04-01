@@ -1,0 +1,27 @@
+Web Server -> Apache Tomcat 
+Eclipse 연결 
+
+Servlet 객체(http) vs Java 객체 
+
+JSP 내장 객체 vs Servlet 객체 
+
+표현식, 액션태그 
+
+Java Beans 
+
+MVC(Model View Controler) 모델 <-- servlet/jsp <--java, mysql, html, css, javascript 
+---------------------------------------
+
+spring framework
+
+---------------------------------------
+
+spring framework cloud <-- docker, network, virtualization [dep/ops]
+
+---------------------------------------
+
+BigData(비정형 Data 저장) --> NoSQL --> Hadoop Echo System <== 
+
+---------------------------------------
+
+
