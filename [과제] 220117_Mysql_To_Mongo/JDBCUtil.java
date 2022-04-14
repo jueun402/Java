@@ -10,7 +10,7 @@ public class JDBCUtil {
 			String jdbcDriver = "com.mysql.cj.jdbc.Driver";
 			String jdbcUrl = "jdbc:mysql://localhost:3306/empdb";
 			String dbUser  = "root";
-			String dbPwd   = "1234";
+			String dbPwd   = "****";
 			System.out.println("DB 접속 시작");
 			Class.forName(jdbcDriver);
 			System.out.println("DB 접속");
